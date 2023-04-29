@@ -1,4 +1,3 @@
-
 const Header = require('./fragments/header')
 const Page = require('./page');
 const Sidebar = require('./fragments/mainPageSidebar')
@@ -10,8 +9,6 @@ class MainPage extends Page {
 
     async visit () {
         await super.open('');
-
-        return new MainPage();
     }
 }
 

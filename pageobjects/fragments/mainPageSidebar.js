@@ -8,8 +8,8 @@ module.exports = class Sidebar {
         return this.root.$('[href*="computers-notebooks"]')
     }
 
-    notebooksButtonClick() {
-        this.notebooksButton.click()
+    async notebooksButtonClick() {
+        await this.notebooksButton.click()
     }
 
 }

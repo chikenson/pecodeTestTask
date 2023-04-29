@@ -4,8 +4,8 @@ class CatalogPage {
         return $('rz-widget-list [href*="/notebooks/"]');
     }
 
-    notebookButtonClick() {
-        this.notebookButton.click()
+    async notebookButtonClick() {
+        await this.notebookButton.click()
     }
 }
 

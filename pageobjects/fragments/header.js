@@ -22,4 +22,17 @@ module.exports = class Header {
         this.notebooksButton.click()
     }
 
+    get searchInput() {
+        return $('[name="search"]');
+      }
+
+    get searchButton() {
+        return $('form button.search-form__submit');
+      }
+
+    async search(value = " ") {
+        await this.searchInput.setValue(value);
+        await this.searchButton.click();
+      }
+
 }
