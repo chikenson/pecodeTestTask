@@ -8,6 +8,7 @@
     "wdio": "wdio run ./wdio.conf.js",
     "searchTest": "wdio run wdio.conf.js --spec ./specs/search.verifying.e2e.js",
     "basketTest": "wdio run wdio.conf.js --spec ./specs/basket.add.e2e.js",
+    "priceFilterTest": "wdio run wdio.conf.js --spec ./specs/price.filter.verifying.e2e.js",
     "searchFaildTest": "wdio run wdio.conf.js --spec ./specs/serch.faild.e2e.js"
   },
   "author": "",
