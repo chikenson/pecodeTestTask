@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./wdio.conf.js",
+    "searchTest": "wdio run wdio.conf.js --spec ./specs/search.verifying.e2e.js",
+    "basketTest": "wdio run wdio.conf.js --spec ./specs/basket.add.e2e.js",
+    "searchFaildTest": "wdio run wdio.conf.js --spec ./specs/serch.faild.e2e.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +18,14 @@
     "@wdio/mocha-framework": "^8.8.7",
     "@wdio/spec-reporter": "^8.8.7",
     "chromedriver": "^112.0.0",
+    "jest": "^29.5.0",
     "wdio-chromedriver-service": "^8.1.1"
+  },
+  "dependencies": {
+    "chai": "^4.3.7",
+    "expect.js": "^0.3.1",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
   }
 }
